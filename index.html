@@ -3,22 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>Rock Paper Scissors!</title>
+
+    <!-- Favicon images for different browsers -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+    <!-- End of favicon images -->
+
+    <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <div class="title-container">
-          <p id="first" class="fade-in-animate"> Rock </p>
-          <p id="second" class="fade-in-animate"> &nbsp; Paper &nbsp; </p>
-          <p id="third" class="fade-in-animate"> Scissors </p>
-        </div>
-      </div>
+        <h1>
+          <a href="" id="first" class="fade-in-animate"> Rock </a>
+          <a href="" id="second" class="fade-in-animate"> &nbsp; Paper &nbsp; </a>
+          <a href="" id="third" class="fade-in-animate"> Scissors </a>
+        </h1>
     </header>
+    <div class="game-info">
+      <img class="icon" src="images/you.svg" 
+          alt="A pretty graphic of a person with a hat.">
+      <h2>You vs Computer</h2>
+      <img class="icon" src="images/computer.svg" 
+            alt="Computer surrounded by a greencircular background.">
+    </div>
+    <div class="wrapper">
+      <section class="column">
+        <img src="">
+        <h2>Rock</h2>
+        <ul>
+          <li>Beats Scissors</li>
+          <li>Loses to Paper</li>
+        </ul>
+      </section>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
