@@ -11,7 +11,7 @@ header {
     justify-content: center;
     padding: 2rem 2rem 2rem 2rem;
     border: 0.75rem double black;
-    border-radius: 25px;
+    border-radius: 24px;
     border-color: white;
     background-color: #3A4252;
  }
@@ -44,25 +44,53 @@ header {
 
  .game-info {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 24px;
+    background-color: #3f51b5;
  }
+
+div.content-wrapper {
+  width: 40%;
+  margin: 1rem;
+  
+}
+
+.player-info {
+  background-color: #37474f;
+  margin: 1.5rem;
+  width: 45%;
+  text-align: center;
+  color: #eceff1;
+  border-radius: 24px;
+}
 
  h2 {
     align-items: center;
     letter-spacing: 3px;
-    margin: 3rem 2rem 2rem 3rem;
     font-size: 32px;
  }
 
  .icon {
      height: 100px;
      width: 100px;
-     margin: 3rem 0 3rem 0;
+     margin: 3rem 0 0 0;
  }
 
- body, html {
+span {
+  margin: 14px;
+}
+
+hr {
+  align-self: center;
+  height: 200px;
+  margin: 14px 14px 14px 14px;
+  border: 1px solid #eceff1;
+  color: #eceff1;
+}
+
+
+body, html {
      height: 100%;
      font-size: 18px;
      background-color: white;
- }
+     font-family: 'Raleway', Arial, sans-serif;
+}

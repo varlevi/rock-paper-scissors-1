@@ -11,7 +11,9 @@
     <link rel="manifest" href="images/site.webmanifest">
     <!-- End of favicon images -->
 
-    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -22,13 +24,30 @@
           <a href="" id="third" class="fade-in-animate"> Scissors </a>
         </h1>
     </header>
-    <div class="game-info">
-      <img class="icon" src="images/you.svg" 
-          alt="A pretty graphic of a person with a hat.">
-      <h2>You vs Computer</h2>
-      <img class="icon" src="images/computer.svg" 
-            alt="Computer surrounded by a greencircular background.">
-    </div>
+    <div class="content-wrapper">
+      <div class="game-info">
+
+        <!-- Div to enclose player info -->
+        <div class="player-info">
+          <img class="icon" src="images/you.svg" 
+                alt="A pretty graphic of a person with a hat.">
+          <h2> You </h2>
+          <span class="player-score">0</span>
+        </div>
+        
+        <!-- Vertical divider thing -->
+        <hr>
+
+        <!-- Div to enclose computer info -->
+        <div class="player-info">
+          <img class="icon" src="images/computer.svg" 
+              alt="Computer surrounded by a greencircular background.">
+          <h2> Computer </h2>
+          <span class="computer-score">0</span>
+        </div>
+
+      </div>
+    <!--
     <div class="wrapper">
       <section class="column">
         <img src="">
@@ -39,6 +58,8 @@
         </ul>
       </section>
     </div>
+  -->
+    </div> <!-- End of Content Wrapper-->
     <script src="script.js"></script>
   </body>
 </html>
