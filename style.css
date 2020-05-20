@@ -46,6 +46,16 @@ a {
   animation-delay: 4s;
 }
 
+div.content-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  height: auto; 
+}
+
+div.game-wrapper {
+  background-color: #b2bae1;
+}
+
 .game-info {
   display: flex;
   flex-flow: column wrap;
@@ -53,17 +63,11 @@ a {
   background-color: #7986cb;
   width: 663px;
   height: 740px;
+  margin: 2rem 3rem 2rem 2rem;;
 }
 
 div.player-wrapper {
   display: flex;
-}
-
-div.content-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  height: auto;
-  margin: 2rem;
 }
 
 .player-info {
@@ -80,6 +84,7 @@ h2 {
   letter-spacing: 3px;
   font-size: 32px;
   margin-block-end: 1rem;
+  margin-block-start: 0.83em;
 }
 
 .icon {
@@ -95,23 +100,22 @@ span {
   margin-bottom: 1rem;
 }
 
+/*
 hr.vertical-separator {
   align-self: center;
   height: 200px;
   margin: 14px 14px 14px 14px;
   border: 1px solid #37474f;
-  /* Without this, the inside of the line will be the background color
-     of the container */
   background-color: #37474f;
-}
+} */
 
 hr.horizontal-separator {
   align-self: center;
   height: 1px;
-  width: 200px;
+  width: 100px;
   border: 1px solid #37474f;
   background-color: #37474f;
-}
+} 
 
 div.battle-wrapper {
   display: flex;
@@ -130,6 +134,179 @@ div.battle-wrapper {
   height: 80%;
   background-color: #37474f;
   margin: 1.5rem;
+}
+
+div.right-content--wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  box-sizing: border-box;
+}
+
+div.hand-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  height: auto;
+  background-color: #c2b2e1;
+}
+
+.hand-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 60%;
+  margin: 2rem;
+}
+
+section.rock {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  text-align: center;
+  width: 300px;
+  background-color: #7b89cc;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: darkgreen;
+}
+
+li::before {
+  content: "+";
+  margin-right: 4px;
+}
+
+.list-minus {
+  color: darkred;
+}
+
+li.list-minus::before {
+  content: "-";
+  margin-right: 4px;
+}
+
+div.result-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  background-color: #b2c9e1;
+}
+
+.game-result {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 2rem 3rem 2rem 2rem;
+}
+
+/* The default blackish background before and after transition */
+.button.button--wapasha {
+  background: #37474f;
+  color: #fff;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button--text-thick {
+  font-weight: 600;
+}
+
+.button--text-upper {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.button--size-s {
+  font-size: 14px;
+}
+
+/* Essential to button appearance */
+.button {
+  align-self: center;
+  float: left;
+  max-width: 150px;
+  display: block;
+  margin: 1.5rem;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  color: inherit;
+  position: relative;
+  z-index: 1;
+}
+
+
+button {
+-webkit-appearance: button;
+cursor: pointer;
+line-height: normal;
+/* idk if works */
+background: #cfd8dc;
+color: #37474f;
+font-weight: 400;
+font-size: 1em;
+font-family: 'Raleway', Arial, sans-serif;
+}
+
+
+.bg-2 {
+background: #7986cb;
+color: #ECEFF1;
+}
+
+
+/* Adds the blue border effect when hovering
+ Remove if you want just a white hover background */
+.button--wapasha:hover::before {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+opacity: 1;
+} 
+
+
+.button--wapasha::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border: 2px solid #3f51b5;
+z-index: -1;
+border-radius: inherit;
+opacity: 0;
+-webkit-transform: scale3d(0.6, 0.6, 1);
+transform: scale3d(0.6, 0.6, 1);
+-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+transition: transform 0.3s, opacity 0.3s;
+-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+} 
+
+/* Adds the white background to button and
+ changes text to blue on hover  */
+.button--wapasha:hover {
+background-color: #fff;
+color: #3f51b5;
+} 
+
+/* Focus pseudo-class represents a state when the button is clicked
+ on. In this case, there is no outline, which is pretty close to
+ a border, but doesn't take space and can be non-rectangualr. */
+button:focus {
+  outline: none;
+}
+
+*,*::before, *::after {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body, html {

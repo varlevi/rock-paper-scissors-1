@@ -21,46 +21,64 @@
         <h1>
           <a href="" id="first" class="fade-in-animate"> Rock </a>
           <a href="" id="second" class="fade-in-animate"> &nbsp; Paper &nbsp; </a>
-          <a href="" id="third" class="fade-in-animate"> Scissors </a>
+          <a href="" id="third" class="fade-in-animate"> Scissors! </a>
         </h1>
     </header>
     <div class="content-wrapper">
-      <div class="game-info">
-        <div class="player-wrapper">
+      <div class="game-wrapper">
+        <div class="game-info">
+          <div class="player-wrapper">
 
-          <!-- Div to enclose player info -->
-          <div class="player-info">
-            <img class="icon" src="images/you.svg" 
+            <!-- Div to enclose player info -->
+            <div class="player-info">
+              <img class="icon" src="images/you.svg" 
                 alt="A pretty graphic of a person with a hat.">
-            <h2> You </h2>
-            <span class="player-score">0</span>
-          </div>
-        
-          <!-- Vertical divider thing 
-          <hr class="vertical-separator">
-          -->
+              <h2> You </h2>
+              <span class="player-score">0</span>
+            </div>
 
-          <!-- Div to enclose computer info -->
-          <div class="player-info">
-            <img class="icon" src="images/computer.svg" 
-              alt="Computer surrounded by a greencircular background.">
-            <h2> Computer </h2>
-            <span class="computer-score">0</span>
-          </div>
+            <!-- Div to enclose computer info -->
+            <div class="player-info">
+              <img class="icon" src="images/computer.svg" 
+                alt="Computer surrounded by a greencircular background.">
+              <h2> Computer </h2>
+              <span class="computer-score">0</span>
+            </div>
 
-        </div>
-        <!--
-        <hr class="horizontal-separator">
-        -->
+          </div>
       
-        <div class="battle-wrapper">
-          <div class="battle-box">
-
+          <div class="battle-wrapper">
+            <div class="battle-box">
+              <p></p>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="right-content--wrapper">
+        <div class="hand-wrapper">
+          <div class="hand-selection">
+            <section class="rock">
+            <h3> Rock </h3>
+            <hr class="horizontal-separator">
+            <ul>
+              <li>Beats Scissors</li>
+              <li class="list-minus">Loses to Paper</li>
+            </ul>
+            <button class="button button--wapasha button--text-thick 
+                    button--text-upper button--size-s">Rock</button>
           </div>
-        </div> 
+        </div>
+
+        <div class="result-wrapper">
+          <div class="game-result">
+            <p class="text-result">5 - 0</p>
+            <p> You Won!</p>
+          </div>
+        </div>
+
       </div>
 
-      <hr class="vertical-separator">
+    </div> <!-- End of Content -->
     <!--
     <div class="wrapper">
       <section class="column">
