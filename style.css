@@ -158,15 +158,28 @@ div.hand-wrapper {
   margin: 2rem;
 }
 
-section.rock {
+section {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
-  text-align: center;
-  width: 300px;
+  align-items: center;
+  text-align: left;
+  width: 250px;
+}
+
+section.rock {
   background-color: #7b89cc;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
+}
+
+section.paper {
+  background-color: #7b89cc;
+}
+
+section.scissors {
+  background-color: #7b89cc;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 
 ul {
@@ -190,6 +203,10 @@ li.list-minus::before {
   content: "-";
   margin-right: 4px;
 }
+
+
+
+
 
 div.result-wrapper {
   display: flex;
