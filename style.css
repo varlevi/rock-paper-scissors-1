@@ -151,11 +151,37 @@ div.hand-wrapper {
 
 .hand-selection {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: auto;
-  height: 60%;
   margin: 2rem;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+}
+
+img.smash {
+  position: absolute;
+  top: 225px;
+}
+
+img.wrap {
+  position: absolute;
+  top: 225px;
+}
+
+img.cut {
+  position: absolute;
+  top: 225px;
+}
+
+h3 {
+  letter-spacing: 3px;
+  font-size: 24px;
+  margin-block-end: 1.5rem;
+  margin-block-start: 5em;
 }
 
 section {
@@ -184,6 +210,7 @@ section.scissors {
 
 ul {
   list-style: none;
+  font-family: 'Lato','Raleway', sans-serif;
 }
 
 li {
@@ -203,9 +230,6 @@ li.list-minus::before {
   content: "-";
   margin-right: 4px;
 }
-
-
-
 
 
 div.result-wrapper {
