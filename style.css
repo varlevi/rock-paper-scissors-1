@@ -146,7 +146,7 @@ div.hand-wrapper {
   display: flex;
   flex-flow: column nowrap;
   height: auto;
-  background-color: #7663d4;
+  background-color: hsl(217, 44%, 34%);
 }
 
 .hand-selection {
@@ -228,7 +228,7 @@ div.result-wrapper {
   justify-content: center;
   align-items: center;
   height: 40%;
-  background-color: #b2c9e1;
+  background-color: hsl(210, 44%, 60%);
 }
 
 .game-result {
