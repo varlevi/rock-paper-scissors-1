@@ -112,7 +112,7 @@ hr.vertical-separator {
 hr.horizontal-separator {
   align-self: center;
   height: 1px;
-  width: 100px;
+  width: 150px;
   border: 1px solid #37474f;
   background-color: #37474f;
 } 
@@ -225,16 +225,55 @@ li.list-minus::before {
 
 div.result-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 40%;
   background-color: hsl(210, 44%, 60%);
 }
 
-.game-result {
+.outer-game--box {
+  display: flex;
+  margin: 2rem 2rem 2rem 3rem;
+  background-color: hsl(210, 44%, 44%);
+  border-radius: 24px;
+}
+
+.game-result--box {
   display: flex;
   flex-flow: row nowrap;
-  margin: 2rem 3rem 2rem 2rem;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  width: 433px;
+  height: 156.685px;
+  border-radius: 24px;
+  background-color: #37474f;
+  margin: 1.5rem;
+}
+
+.reaction-box {
+  display: flex;
+  margin: 2rem;
+  background: hsl(210, 44%, 44%);
+  border-radius: 24px;
+}
+
+.reaction-image--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 156.685px;
+  background-color: #37474f;
+  margin: 1.5rem;
+  border-radius: 24px;
+}
+
+p.text-result {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #ECEFF1;
+  letter-spacing: 2px;
+  font-size: 32px;
+  margin: 2rem;
+  font-weight: normal;
 }
 
 /* The default blackish background before and after transition */
