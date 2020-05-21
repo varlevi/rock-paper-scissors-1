@@ -138,7 +138,7 @@ div.battle-wrapper {
 
 div.right-content--wrapper {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   box-sizing: border-box;
 }
 
@@ -146,42 +146,30 @@ div.hand-wrapper {
   display: flex;
   flex-flow: column nowrap;
   height: auto;
-  background-color: #c2b2e1;
+  background-color: #7663d4;
 }
 
 .hand-selection {
   display: flex;
   align-items: center;
   width: auto;
-  margin: 2rem;
+  margin: 4rem;
 }
 
-img {
-  height: 150px;
-  width: 150px;
+section > img {
+  height: 195px;
+  width: 195px;
   z-index: 1;
+  position: relative;
+  display: block;
+  margin-top: -45px;
 }
 
-img.smash {
-  position: absolute;
-  top: 225px;
-}
-
-img.wrap {
-  position: absolute;
-  top: 225px;
-}
-
-img.cut {
-  position: absolute;
-  top: 225px;
-}
 
 h3 {
   letter-spacing: 3px;
   font-size: 24px;
   margin-block-end: 1.5rem;
-  margin-block-start: 5em;
 }
 
 section {
@@ -189,21 +177,21 @@ section {
   flex-flow: column wrap;
   align-items: center;
   text-align: left;
-  width: 250px;
+  width: 253px;
 }
 
 section.rock {
-  background-color: #7b89cc;
+  background-color: #e5aec6;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
 }
 
 section.paper {
-  background-color: #7b89cc;
+  background-color: #e5dcae;
 }
 
 section.scissors {
-  background-color: #7b89cc;
+  background-color: #e5c9ae;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
 }
@@ -211,10 +199,13 @@ section.scissors {
 ul {
   list-style: none;
   font-family: 'Lato','Raleway', sans-serif;
+  margin-top: 1rem;
+  letter-spacing: 2px;
 }
 
 li {
   color: darkgreen;
+  line-height: 1.5rem;
 }
 
 li::before {
@@ -271,10 +262,11 @@ div.result-wrapper {
 .button {
   align-self: center;
   float: left;
-  max-width: 150px;
+  min-width: 160px;
+  max-width: 175px;
   display: block;
   margin: 1.5rem;
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   border: none;
   background: none;
   color: inherit;
@@ -293,6 +285,7 @@ color: #37474f;
 font-weight: 400;
 font-size: 1em;
 font-family: 'Raleway', Arial, sans-serif;
+border-radius: 14px;
 }
 
 
