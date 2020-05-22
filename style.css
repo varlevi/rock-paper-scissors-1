@@ -63,7 +63,7 @@ div.game-wrapper {
   background-color: #7986cb;
   width: 663px;
   height: 740px;
-  margin: 2rem 3rem 2rem 2rem;;
+  margin: 5rem 3rem 2rem 2rem;;
 }
 
 div.player-wrapper {
@@ -143,17 +143,23 @@ div.right-content--wrapper {
 }
 
 div.hand-wrapper {
+  height: auto;
+  background-color: hsl(230, 44%, 79%);
+}
+
+div.hand-container {
   display: flex;
   flex-flow: column nowrap;
-  height: auto;
   background-color: hsl(217, 44%, 34%);
+  border-radius: 24px;
+  margin: 5rem 4rem 3rem 3rem;
 }
 
 .hand-selection {
   display: flex;
   align-items: center;
   width: auto;
-  margin: 4rem;
+  margin: 1.5rem;
 }
 
 section > img {
@@ -226,12 +232,19 @@ li.list-minus::before {
 div.result-wrapper {
   display: flex;
   height: 40%;
+  background-color: hsl(230, 44%, 79%);
+}
+
+div.box-container {
+  display: flex;
   background-color: hsl(210, 44%, 60%);
+  margin: 2rem 2rem 2rem 3rem;
+  border-radius: 24px;
 }
 
 .outer-game--box {
   display: flex;
-  margin: 2rem 2rem 2rem 3rem;
+  margin: 1.5rem;
   background-color: hsl(210, 44%, 44%);
   border-radius: 24px;
 }
@@ -242,8 +255,6 @@ div.result-wrapper {
   justify-content: center;
   align-items: center;
   width: max-content;
-  width: 433px;
-  height: 156.685px;
   border-radius: 24px;
   background-color: #37474f;
   margin: 1.5rem;
@@ -251,7 +262,7 @@ div.result-wrapper {
 
 .reaction-box {
   display: flex;
-  margin: 2rem;
+  margin: 1.5rem;
   background: hsl(210, 44%, 44%);
   border-radius: 24px;
 }
