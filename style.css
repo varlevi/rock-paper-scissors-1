@@ -256,14 +256,14 @@ div.result-wrapper {
   margin: 1.5rem;
 }
 
-.reaction-box {
+.reset-box {
   display: flex;
   margin: 2rem;
   background: hsl(210, 44%, 44%);
   border-radius: 24px;
 }
 
-.reaction-image--container {
+.reset-game {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,6 +385,44 @@ color: #3f51b5;
  a border, but doesn't take space and can be non-rectangualr. */
 button:focus {
   outline: none;
+}
+
+.btn-1 {
+  border: 3px solid #7986cb;
+  color: #ECEFF1;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #7986cb;
+  cursor: pointer;
+  padding: 1rem 0.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  line-height: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-1a:hover, .btn-1a:active {
+  color: #37474f;
+  background: #ECEFF1;
+  border-color: #ECEFF1;
 }
 
 *,*::before, *::after {
