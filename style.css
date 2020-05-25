@@ -138,9 +138,27 @@ div.battle-wrapper {
   margin: 1.5rem;
 }
 
+div.battle-box .compare {
+  letter-spacing: 2px;
+  font-weight: 600;
+  animation: fadeIn 1s ease-in 0s;
+}
+
 div.battle-box img {
-  width: 200px;
-  height: autopx;
+  max-width: 200px;
+  height: auto;
+  animation: fadeIn 1s ease-in 0s;
+}
+
+@media screen and (max-width: 800px) {
+.cool-image {
+  display: block;
+  min-width: 100px;
+  max-width: 150px;
+  min-height: 100px;
+  max-height: 150px;
+  animation: fadeIn 1s ease-in 0s;
+}
 }
 
 div.right-content--wrapper {
@@ -285,6 +303,9 @@ p {
 
 p.text-result {
   font-size: 32px;
+  animation: fadeIn 1s ease-in 0s;
+  text-align: center;
+  line-height: 2.5rem;
 }
 
 /* The default blackish background before and after transition */
@@ -392,7 +413,7 @@ button:focus {
   color: #ECEFF1;
 }
 
-.btn {
+.reset-button {
   font-family: inherit;
   font-size: inherit;
   background-color: #7986cb;
