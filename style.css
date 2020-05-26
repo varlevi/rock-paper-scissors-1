@@ -51,6 +51,8 @@ div.content-wrapper {
   justify-content: center;
   flex-flow: row nowrap;
   height: auto;
+  background-color: #3A4252;
+  padding-bottom: 4rem;
 }
 
 @media (orientation: portrait) {
@@ -70,9 +72,9 @@ div.game-wrapper {
   flex-flow: column wrap;
   border-radius: 1.67rem;
   background-color: #7986cb;
-  width: 46rem;
-  /* height: 51.39rem; */
-  margin: 4rem;
+  width: 40rem;
+  height: auto;
+  margin: 4rem 4rem;
 }
 
 div.player-wrapper {
@@ -161,7 +163,7 @@ div.battle-box img {
 }
 }
 
-div.right-content--wrapper {
+div.right-content-wrapper {
   display: flex;
   flex-flow: column nowrap;
   box-sizing: border-box;
@@ -278,8 +280,8 @@ div.result-wrapper {
   border-radius: 1.67rem;
   background-color: #37474f;
   margin: 2rem;
-  width: 30.56rem;
-  height: 12.08rem;
+  width: 100%;
+  height: 8rem;
 }
 
 .reset-box {
@@ -468,4 +470,14 @@ body, html {
   font-size: 12px;
   background-color: white;
   font-family: 'Raleway', Arial, sans-serif;
+}
+
+@media (max-width: 1280px) {
+  .game-info {
+    width: 46rem;
+    margin: 4rem auto;
+  }
+  div.content-wrapper {
+    display: grid;
+  }
 }
