@@ -1,5 +1,5 @@
 header {
-  height: 25%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,16 +9,16 @@ header {
 h1 {
   display: flex;
   justify-content: center;
-  padding: 2rem 2rem 2rem 2rem;
-  border: 0.75rem double black;
-  border-radius: 24px;
+  padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+  border: 0.6rem double black;
+  border-radius: 1.67rem;
   border-color: white;
   background-color: #3A4252;
 }
 
 a {
   font-family: inherit;
-  font-size: 42px;
+  font-size: 2.92rem;
   letter-spacing: 3px;
   color: white;
   text-decoration: none;
@@ -48,22 +48,31 @@ a {
 
 div.content-wrapper {
   display: flex;
+  justify-content: center;
   flex-flow: row nowrap;
-  height: auto; 
+  height: auto;
+}
+
+@media (orientation: portrait) {
+  content-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 }
 
 div.game-wrapper {
   background-color: #b2bae1;
+  /* width: 50%; */
 }
 
 .game-info {
   display: flex;
   flex-flow: column wrap;
-  border-radius: 24px;
+  border-radius: 1.67rem;
   background-color: #7986cb;
-  width: 663px;
-  height: 740px;
-  margin: 2rem 3rem 2rem 2rem;;
+  width: 46rem;
+  /* height: 51.39rem; */
+  margin: 4rem;
 }
 
 div.player-wrapper {
@@ -76,13 +85,13 @@ div.player-wrapper {
   width: 45%;
   text-align: center;
   color: #eceff1;
-  border-radius: 24px;
+  border-radius: 1.67rem;
 }
 
 h2 {
   align-items: center;
   letter-spacing: 3px;
-  font-size: 32px;
+  font-size: 2.22rem;
   margin-block-end: 1rem;
   margin-block-start: 0.83em;
 }
@@ -95,24 +104,15 @@ h2 {
 
 span {
   display: inline-block;
-  font-size: 24px;
+  font-size: 1.67rem;
   font-weight: 900;
   margin-bottom: 1rem;
 }
 
-/*
-hr.vertical-separator {
-  align-self: center;
-  height: 200px;
-  margin: 14px 14px 14px 14px;
-  border: 1px solid #37474f;
-  background-color: #37474f;
-} */
-
 hr.horizontal-separator {
   align-self: center;
   height: 1px;
-  width: 150px;
+  width: 10.42rem;
   border: 1px solid #37474f;
   background-color: #37474f;
 } 
@@ -122,8 +122,8 @@ div.battle-wrapper {
   justify-content: center;
   align-items: center;
   width: auto;
-  height: 400px;
-  border-radius: 0px 0px 24px 24px;
+  height: 27.78rem;
+  border-radius: 0 0 1.67rem 1.67rem;
   background-color: #6877c4;
 }
 
@@ -131,7 +131,7 @@ div.battle-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 24px;
+  border-radius: 1.67rem;
   width: 80%;
   height: 80%;
   background-color: #37474f;
@@ -165,12 +165,16 @@ div.right-content--wrapper {
   display: flex;
   flex-flow: column nowrap;
   box-sizing: border-box;
+  width: 100%;
+  height: auto;
 }
 
 div.hand-wrapper {
   display: flex;
   flex-flow: column nowrap;
-  height: auto;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
   background-color: hsl(217, 44%, 34%);
 }
 
@@ -182,8 +186,9 @@ div.hand-wrapper {
 }
 
 section > img {
-  height: 195px;
-  width: 195px;
+  height: 175px;
+  /* max-width: 100%; */
+  width: auto;
   z-index: 1;
   position: relative;
   display: block;
@@ -193,7 +198,7 @@ section > img {
 
 h3 {
   letter-spacing: 3px;
-  font-size: 24px;
+  font-size: 1.67rem;
   margin-block-end: 1.5rem;
 }
 
@@ -202,13 +207,13 @@ section {
   flex-flow: column wrap;
   align-items: center;
   text-align: left;
-  width: 253px;
+  width: 17.57rem;
 }
 
 section.rock {
   background-color: #e5aec6;
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
+  border-top-left-radius: 1.67rem;
+  border-bottom-left-radius: 1.67rem;
 }
 
 section.paper {
@@ -217,8 +222,8 @@ section.paper {
 
 section.scissors {
   background-color: #e5c9ae;
-  border-top-right-radius: 24px;
-  border-bottom-right-radius: 24px;
+  border-top-right-radius: 1.67rem;
+  border-bottom-right-radius: 1.67rem;
 }
 
 ul {
@@ -250,15 +255,18 @@ li.list-minus::before {
 
 div.result-wrapper {
   display: flex;
-  height: 40%;
+  justify-content: center;
+  align-items: stretch;
+  height: auto;
+  width: 100%;
   background-color: hsl(210, 44%, 60%);
 }
 
 .outer-game--box {
   display: flex;
-  margin: 2rem 2rem 2rem 3rem;
+  margin: 3rem;
   background-color: hsl(210, 44%, 44%);
-  border-radius: 24px;
+  border-radius: 1.67rem;
 }
 
 .game-result--box {
@@ -267,45 +275,47 @@ div.result-wrapper {
   justify-content: center;
   align-items: center;
   width: max-content;
-  width: 433px;
-  height: 156.685px;
-  border-radius: 24px;
+  border-radius: 1.67rem;
   background-color: #37474f;
-  margin: 1.5rem;
+  margin: 2rem;
+  width: 30.56rem;
+  height: 12.08rem;
 }
 
 .reset-box {
   display: flex;
-  margin: 2rem;
+  margin: 3rem;
   background: hsl(210, 44%, 44%);
-  border-radius: 24px;
+  border-radius: 1.67rem;
 }
 
 .reset-game {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 156.685px;
+  /* width: 200px; */
+  /* height: 156.685px; */
   background-color: #37474f;
-  margin: 1.5rem;
-  border-radius: 24px;
+  margin: 2rem;
+  border-radius: 1.67rem;
 }
 
 p {
   font-family: 'Raleway', Arial, sans-serif;
   color: #ECEFF1;
   letter-spacing: 3px;
-  font-size: 24px;
+  font-size: 1.67rem;
   margin: 1rem;
   font-weight: 700;
 }
 
 p.text-result {
-  font-size: 32px;
+  font-size: 2.22rem;
   animation: fadeIn 1s ease-in 0s;
   text-align: center;
   line-height: 2.5rem;
+  /* width: 440px; */
+  /* height: 174px; */
 }
 
 /* The default blackish background before and after transition */
@@ -333,8 +343,8 @@ p.text-result {
 .button {
   align-self: center;
   float: left;
-  min-width: 160px;
-  max-width: 175px;
+  min-width: 11.11rem;
+  max-width: 12.15rem;
   display: block;
   margin: 1.5rem;
   padding: 1rem 2rem;
@@ -356,7 +366,7 @@ color: #37474f;
 font-weight: 400;
 font-size: 1em;
 font-family: 'Raleway', Arial, sans-serif;
-border-radius: 14px;
+border-radius: 0.97rem;
 }
 
 
@@ -429,6 +439,7 @@ button:focus {
   line-height: 1.5rem;
   font-weight: 600;
   letter-spacing: 2px;
+  margin: 2rem;
 }
 
 .btn:after {
@@ -454,7 +465,7 @@ button:focus {
 
 body, html {
   height: 100%;
-  font-size: 18px;
+  font-size: 12px;
   background-color: white;
   font-family: 'Raleway', Arial, sans-serif;
 }
